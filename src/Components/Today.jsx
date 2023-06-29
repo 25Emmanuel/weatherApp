@@ -39,21 +39,21 @@ const Today = ( {search, setSearch, searchLocation, handleClick, report, error }
   let background = report ? report.weather[0].main : 'default';
   return (
     <div className={background}>
-      <div className='input-container'>
-        <form onSubmit={e => e.preventDefault()}>
-          <input 
-            type='text' 
-            placeholder='enter city' 
-            className='search' 
-            value={search} 
-            onChange={e => setSearch(e.target.value)}
-            onKeyDown={searchLocation}
-          />
-          <input className='search-btn' type='submit' onClick={handleClick}/>
-        </form>
-        
+        <div className='input-container'>
+            <form onSubmit={e => e.preventDefault()}>
+                <input 
+                    type='text' 
+                    placeholder='enter city' 
+                    className='search' 
+                    value={search} 
+                    onChange={e => setSearch(e.target.value)}
+                    onKeyDown={searchLocation}
+                />
+            <input className='search-btn' type='submit' onClick={handleClick}/>
+            </form>
+            
 
-      </div>
+        </div>
       {iconStyle}
       {error ? <p style={{color:'red', fontWeight:'600'}}>{error}</p> : null}
       <h3 className='today-temperature'>{report ? `${Math.trunc(report.main.temp)}\u00b0c` : 'Enter a city...'} </h3>

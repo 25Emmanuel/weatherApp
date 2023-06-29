@@ -186,6 +186,12 @@ code {
  .container {
    width: 100%;
  }
+ .default, .Clouds, .Clear, .Fog, .Mist, .Rain,.Snow, .Sunny {
+  height: 60%;
+ }
+ .details-container {
+  height: 40%;
+ }
  .search {
    width: 80%;
    height: 10%;
@@ -197,18 +203,25 @@ code {
  .search-btn {
    margin-top: 3%;
    width: 50%;
+   padding: px;
  }
  .weather-icon {
-   font-size: 150px;
+   font-size: 120px;
+ }
+ .weather-text {
+    margin-top: 15px;
+ }
+ .today-temperature {
+  font-size: 50px;
  }
  .details-container {
    flex-direction: column;
    overflow: auto;
  }
  .details-value {
-   font-size: 20px;
+   font-size: 15px;
  }
  .details-head {
-   font-size: 30px;
+   font-size: 20px;
  }
 }
