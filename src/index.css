@@ -1,0 +1,214 @@
+@import url('https://fonts.cdnfonts.com/css/raleway-5');
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+               
+body {
+ margin: 0;
+ font-family: 'Raleway', 'Segoe UI', 'Roboto', 'Oxygen',
+   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+   sans-serif;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+   monospace;
+}
+
+.container {
+ width: 60%;
+ margin-left: auto;
+ margin-right: auto;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+}
+.search {
+ width: 60%;
+ height: 15%;
+ border-radius: 5px;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ outline: none;
+ border: none;
+ padding: 5px;
+ font-size: 25px;
+ font-family: 'Raleway', sans-serif;
+}
+
+.search-btn {
+ margin-top: 1%;
+ width: 40%;
+ padding: 10px 10px 10px 10px;
+ outline: none;
+ border: none;
+ height: 100%;
+ background-color: rgb(52, 52, 109);
+ border-radius: 5px;
+ color: white;
+ cursor: pointer;
+ font-weight: 900;
+}
+.search::placeholder {
+ font-size: 25px;
+}
+.weather-icon {
+ font-size: 200px;
+ margin-top: 5%;
+}
+.location {
+ font-size: 25px;
+ margin-top: 10px;
+}
+/* classes to help background correspond with weather */
+.default {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-thiago-matos-3230019.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Rain {
+ height: 70%;
+ padding-top: 5%;
+ color: rgb(61, 60, 60);
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-bedis-elacheche-891123.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Clear {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-clear2.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Clouds {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-eberhard-grossgasteiger-1019991.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Snow {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-frans-van-heerden-723184.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Sunny {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-brett-sayles-912364.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Mist {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-eberhard-grossgasteiger-1624506.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+.Fog {
+ height: 70%;
+ padding-top: 5%;
+ color: white;
+ background-color: rgb(86,107,112);
+ background-image: url('/images2/pexels-eberhard-grossgasteiger-1743392.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ border-radius: 20px 20px 0px 0px;
+ overflow: auto;
+}
+/* end of background correnpondence classes */
+.weather-text {
+ margin-top: 25px;
+ font-size: 40px;
+}
+.today-temperature {
+ font-size: 75px;
+}
+.details-container {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ height: 30%;
+ background-color: rgb(52, 52, 109);
+ color: white;
+}
+.details-value {
+ font-size: 45px;
+}
+@media (max-width: 920px) {
+ .container {
+   width: 100%;
+ }
+ .search {
+   width: 80%;
+   height: 10%;
+   font-size: 15px;
+ }
+ .search::placeholder {
+   font-size: 15px;
+ }
+ .search-btn {
+   margin-top: 3%;
+   width: 50%;
+ }
+ .weather-icon {
+   font-size: 150px;
+ }
+ .details-container {
+   flex-direction: column;
+   overflow: auto;
+ }
+ .details-value {
+   font-size: 20px;
+ }
+ .details-head {
+   font-size: 30px;
+ }
+}
